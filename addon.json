@@ -1,6 +1,6 @@
 {
     "name": "tipp",
-    "version": "1.5.0",
+    "version": "1.5.1",
     "description": {
         "de": "Tippspiel-System mit Anmeldung, Tippabgabe, Auswertung und Joker-Regeln.",
         "en": "Betting game system with registration, tip submission, evaluation and joker rules."

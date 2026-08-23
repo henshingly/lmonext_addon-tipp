@@ -23,3 +23,11 @@ CHANGELOG.md des LMOnext-Kernprojekts unter den Abschnitten
 - Als eigenständiges addon.json-Paket verpackt (Templates/Sprachdateien
   jetzt lokal im Addon statt zentral im Core), installierbar über
   Administrator → Addons.
+
+## min_core_version-Korrektur
+
+- min_core_version von "1.4.0" auf "1.9.0" korrigiert (Copy-Paste-Rest aus
+  einer älteren internen Versionierung, faktisch wirkungslos, da niedriger
+  als jede real existierende LMOnext-Version - AddonManager konnte damit nie
+  eine zu alte Core-Version blockieren). "1.9.0" ist die tatsächliche
+  LMOnext-Core-Version, ab der der Addon-Manager überhaupt existiert.
