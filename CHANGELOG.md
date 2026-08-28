@@ -31,3 +31,16 @@ CHANGELOG.md des LMOnext-Kernprojekts unter den Abschnitten
   als jede real existierende LMOnext-Version - AddonManager konnte damit nie
   eine zu alte Core-Version blockieren). "1.9.0" ist die tatsächliche
   LMOnext-Core-Version, ab der der Addon-Manager überhaupt existiert.
+
+## Version 1.5.2
+
+- Bugfix: "db_tables" in addon.json korrigiert - die bisherige Deklaration
+  ("lmo_tipp_tipper", "lmo_tipp_tipps", "lmo_tipp_settings") stimmte weder
+  in der Benennung noch vollständig mit den tatsächlich vom Addon
+  angelegten Tabellen überein (echte Namen: tipp_user, tipp_team,
+  tipp_liga_freigabe, tipp_abo, tipp_tipp, tipp_settings - OHNE
+  DB-Präfix, der wird vom neuen "Daten löschen"-Feature im Addon-Manager
+  zur Laufzeit selbst ergänzt, siehe Core-CHANGELOG.md
+  src/Addon/AddonManager.php 1.4.0). Betraf bisher keine sichtbare
+  Funktion, wäre aber beim neuen Purge-Feature auf einen unvollständigen/
+  falschen Cleanup hinausgelaufen.

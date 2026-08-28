@@ -1,13 +1,13 @@
 {
     "name": "tipp",
-    "version": "1.5.1",
+    "version": "1.5.2",
     "description": {
         "de": "Tippspiel-System mit Anmeldung, Tippabgabe, Auswertung und Joker-Regeln.",
         "en": "Betting game system with registration, tip submission, evaluation and joker rules."
     },
     "author": "Dietmar Kersting, Torsten Hofmann",
     "license": "GPL-3.0-only",
-    "homepage": "https://github.com/henshingly/lmonext_addon-tipp",
+    "homepage": "https://github.com/henshingly/addon-tipp",
     "min_core_version": "1.9.0",
     "type": "both",
     "admin_actions": [
@@ -55,8 +55,11 @@
     ],
     "dependencies": [],
     "db_tables": [
-        "lmo_tipp_tipper",
-        "lmo_tipp_tipps",
-        "lmo_tipp_settings"
+        "tipp_user",
+        "tipp_team",
+        "tipp_liga_freigabe",
+        "tipp_abo",
+        "tipp_tipp",
+        "tipp_settings"
     ]
 }
